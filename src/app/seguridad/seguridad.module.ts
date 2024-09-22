@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {LoginComponent} from './login/login.component';
 import { RouterModule, Routes} from '@angular/router';
 import { RegisterComponent } from './register/register.component';
+import { FormfreetimerComponent } from './form-freetimer/form-freetimer.component';
 const routes: Routes = [
   {
     path:'',
@@ -10,6 +11,9 @@ const routes: Routes = [
   },{
     path: 'registro',
     component: RegisterComponent
+  },{
+    path: 'form-freetimer',
+    component: FormfreetimerComponent
   }
 ];
 

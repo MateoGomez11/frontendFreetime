@@ -15,15 +15,30 @@
           <p class="subtitle">Administra tu tiempo</p>
         </div>
       
-        <form class="register-form">
-          <input type="password" placeholder="Contraseña" class="input-field" required />
-          <input type="text" placeholder="Nombre Completo" class="input-field" required />
-          <input type="text" placeholder="Cédula" class="input-field" required />
-          <input type="email" placeholder="Correo electrónico" class="input-field" required />
-          <input type="text" placeholder="Ciudad" class="input-field" required />
-          <input type="text" placeholder="País" class="input-field" required />
-          <input type="tel" placeholder="Celular" class="input-field" required />
-          <input type="text" placeholder="Dirección" class="input-field" required />
+        <form class="register-form" #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
+          <input type="password" placeholder="Contraseña" class="input-field"  />
+          <input type="text" placeholder="Nombre Completo" class="input-field"  />
+          <input type="text" placeholder="Cédula" class="input-field"  />
+          <input type="email" placeholder="Correo electrónico" class="input-field"  />
+          <input type="text" placeholder="Ciudad" class="input-field"  />
+          <input type="text" placeholder="País" class="input-field"  />
+          <input type="tel" placeholder="Celular" class="input-field"  />
+          <input type="text" placeholder="Dirección" class="input-field"  />
+          <div class="radio-group-container">
+            <p>Selecciona una opción:</p>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="quiz" value="1" required [(ngModel)]="selectedOption" />FreeTimer
+                </label>
+                <label>
+                    <input type="radio" name="quiz" value="2" [(ngModel)]="selectedOption" />Freetimer
+                </label>
+                <label>
+                    <input type="radio" name="quiz" value="3" [(ngModel)]="selectedOption" />Ambos
+                </label>
+                
+            </div>
+        </div>
           <button type="submit" class="register-button">Registrarte</button>
           <div class="form-links">
           </div>
