@@ -1,16 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Freetime - Administra tu tiempo</title>
+  <link rel="stylesheet" href="form-freetimer.component.css">
 </head>
 <body>
-    <div class="register-container">
-        <div class="register-header">
-          <div class="logo">
-            <img src="/src/assets/prueba.png" alt="hola"/>
-          </div>
-          <h2 class="title">Freetime</h2>
-          <p class="subtitle">Administra tu tiempo</p>
-        </div>
+
+  <div class="freetime-container">
+    <h1>Freetime</h1>
+    <h2>Administra tu tiempo</h2>
+
+    <form (ngSubmit)="onSubmit()" #freetimeForm="ngForm">
+      <!-- Upload Section -->
+      <div class="form-group">
+        <label for="pila">Plantilla PILA - Comprobante seguridad social (solo formato PDF)</label>
+        <input type="file" id="pila" name="pila" accept=".pdf" required>
+        <button type="button">Subir</button>
+      </div>
+
+      <!-- Category Selection -->
+      <div class="form-group">
+        <label for="category">Seleccione las categorías de tareas que desea aplicar</label>
+        <select id="category" name="category" [(ngModel)]="selectedCategory" required>
+          <option value="" disabled selected>Categorías</option>
+          <option value="Tareas del hogar">Tareas del hogar</option>
+          <option value="Cuidado personas/mascotas">Cuidado personas/mascotas</option>
+          <option value="Transporte">Transporte</option>
+          <option value="Otros">Otros</option>
+        </select>
+      </div>
+
+      <!-- Terms and Conditions -->
+      <div class="form-group">
+        
+        <input type="checkbox" id="terms" name="terms" [(ngModel)]="acceptedTerms" required>
+        <label for="terms">Aceptar <a href="#">Términos y condiciones</a></label>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" [disabled]="!freetimeForm.form.valid">Crear cuenta</button>
+    </form>
+  </div>
+
+</body>
+</html>

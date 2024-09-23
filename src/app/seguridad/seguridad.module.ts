@@ -4,6 +4,8 @@ import {LoginComponent} from './login/login.component';
 import { RouterModule, Routes} from '@angular/router';
 import { RegisterComponent } from './register/register.component';
 import { FormfreetimerComponent } from './form-freetimer/form-freetimer.component';
+import { FormsModule } from '@angular/forms';
+
 const routes: Routes = [
   {
     path:'',
@@ -20,7 +22,7 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),FormsModule
   ]
 })
 export class SeguridadModule { }

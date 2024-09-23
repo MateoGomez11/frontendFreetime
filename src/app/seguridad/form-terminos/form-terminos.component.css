@@ -1,0 +1,80 @@
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid #FF0000;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Estilo del header */
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FF0000;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .header .logo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .header h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .header p {
+    color: white;
+    font-size: 14px;
+  }
+  
+  /* Estilo del formulario */
+  .form-container {
+    margin-top: 20px;
+  }
+  
+  .form-container h2 {
+    color: #FF0000;
+  }
+  
+  .form-container label {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .form-container a {
+    color: #FF0000;
+    text-decoration: none;
+  }
+  
+  .checkbox-container {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .submit-btn {
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submit-btn:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+  }
