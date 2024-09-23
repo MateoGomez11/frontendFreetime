@@ -18,7 +18,7 @@ export class RegisterComponent {
     } else if (selectedOption === "2") {
       window.location.href = '/form-freetimer';
     } else if (selectedOption === "3") {
-      window.location.href = '/form-freetimer-fulltimer';
+      window.location.href = '/form-both';
     } else {
       alert('Por favor, selecciona una opción.');
     }
