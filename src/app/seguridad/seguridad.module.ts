@@ -4,6 +4,9 @@ import {LoginComponent} from './login/login.component';
 import { RouterModule, Routes} from '@angular/router';
 import { RegisterComponent } from './register/register.component';
 import { FormfreetimerComponent } from './form-freetimer/form-freetimer.component';
+import { FormTerminosComponent } from './form-terminos/form-terminos.component';
+import { FormBothComponent } from './form-both/form-both.component';
+
 import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
@@ -16,6 +19,12 @@ const routes: Routes = [
   },{
     path: 'form-freetimer',
     component: FormfreetimerComponent
+  },{
+    path: 'form-terminos',
+    component: FormTerminosComponent
+  },{
+    path: 'form-both',
+    component: FormBothComponent
   }
 ];
 
