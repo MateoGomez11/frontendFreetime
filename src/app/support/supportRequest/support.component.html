@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Soporte</title>
+    <link rel="stylesheet" href="support.component.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="../../../assets/prueba.png" alt="Logo">
+        </div>
+
+        <h1>Solicitud de Soporte</h1>
+
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Ingrese Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Ingrese Correo:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="topic">Ingrese que desea reportar:</label>
+                <select id="topic" name="topic" required>
+                    <option value="">Seleccione que tema</option>
+                    <option value="problema1">Problema 1</option>
+                    <option value="problema2">Problema 2</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Describa el tema que desea reportar:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+
+            <div class="buttons">
+                <button type="reset" class="btn cancel">Cancelar</button>
+                <button type="submit" class="btn submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
