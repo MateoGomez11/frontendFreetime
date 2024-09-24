@@ -6,7 +6,8 @@ import { FormfreetimerComponent } from './seguridad/form-freetimer/form-freetime
 import { FormTerminosComponent } from './seguridad/form-terminos/form-terminos.component';
 import { FormBothComponent } from './seguridad/form-both/form-both.component';
 import { newTaskComponent } from './task/newTask1/newTask.component';
-import {newTaskComponent3} from './task/newTask3/newTask3.component';
+import { newTaskComponent2 } from './task/newTask2/newTask2.component';
+import { newTaskComponent3 } from './task/newTask3/newTask3.component';
  
 export const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -15,6 +16,8 @@ export const routes: Routes = [
   { path: 'form-freetimer', component: FormfreetimerComponent },
   { path: 'form-terminos', component: FormTerminosComponent },
   { path: 'form-both', component: FormBothComponent },
-  { path: 'task', component: newTaskComponent },
-  {path: 'newTask3', component: newTaskComponent3}
+  { path: 'newTask', component: newTaskComponent },
+  { path: 'newTask2', component: newTaskComponent2 },
+  { path: 'newTask3', component: newTaskComponent3 }
+
 ];

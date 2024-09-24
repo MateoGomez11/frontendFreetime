@@ -1,30 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>New Task</title>
+    <link rel="stylesheet" href="./newTask2.component.html"> <!-- Aquí se conecta el archivo CSS -->
 </head>
 
 <body>
-    <div class="login-container">
-        <div class="login-header">
-            <div class="logo">
-                <img src="/src/assets/prueba.png" alt="hola" />
-            </div>
-            <h2 class="title">Freetime</h2>
-            <p class="subtitle">Administra tu tiempo</p>
+    <!-- Sección del logo, título y usuario fuera del contenedor rojo -->
+    <div class="header">
+        <div class="logo">
+            <img src="/src/assets/prueba.png" alt="Logo de Freetime" />
         </div>
+        <h2 class="title">Freetime</h2>
+        <p class="subtitle">Administra tu tiempo</p>
+        <div class="user-info">
+            <img src="/src/assets/user-icon.png" alt="Usuario" class="user-icon" />
+            <span class="username">Nombre de usuario</span>
+        </div>
+    </div>
+    <!-- Contenedor del formulario con margen rojo -->
+    <div class="new-task-container">
+        <form class="task-form">
+            <div class="form-group">
+                <label for="estimated-time">Tiempo estimado:</label>
+                <input id="estimated-time" type="number" value="3" class="input-field" /> horas
+            </div>
 
-        <form class="login-form">
-            <input type="email" placeholder="Correo electrónico" class="input-field" required />
-            <input type="password" placeholder="Contraseña" class="input-field" required />
-            <button type="submit" class="login-button">Iniciar Sesión</button>
-            <div class="form-links">
-                <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
-                <span>&#124;</span>
-                <a href="/register" class="create-account">Crea una cuenta</a>
+            <div class="form-group">
+                <label for="offer">Oferta:</label>
+                <input id="offer" type="text" placeholder="COP" class="input-field" />
+            </div>
+
+            <div class="form-group">
+                <label for="suggested-offer">Oferta sugerida:</label>
+                <p id="suggested-offer">$0 COP</p> <!-- Se actualizará con el valor del backend -->
+            </div>
+
+            <div class="form-group">
+                <label for="balance">Saldo:</label>
+                <p id="balance">$100K COP</p>
+            </div>
+
+            <div class="form-group">
+                <label for="execution-date">Fecha de ejecución:</label>
+                <input id="execution-date" type="date" value="2023-10-15" class="input-field" />
+            </div>
+
+            <div class="form-group">
+                <label for="hour">Hora:</label>
+                <input id="hour" type="time" value="10:00" class="input-field" />
+            </div>
+
+            <div class="form-group">
+                <label for="location">Dirección:</label>
+                <input id="location" type="text" placeholder="Ubicación" class="input-field" />
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="cancel-button">Cancelar</button>
+                <button type="submit" class="offer-button">Ofertar</button>
             </div>
         </form>
     </div>
