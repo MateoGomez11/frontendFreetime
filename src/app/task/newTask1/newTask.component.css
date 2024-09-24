@@ -1,0 +1,104 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 2px solid #c00;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.title-section {
+    text-align: center;
+}
+
+.app-title {
+    font-size: 1.5rem;
+    color: #000;
+    margin: 0.5rem 0;
+}
+
+.app-subtitle {
+    font-size: 1rem;
+    color: #666;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.username {
+    font-size: 1rem;
+    color: #000;
+}
+
+.task-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #c00;
+    width: 90%;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.input-field,
+.textarea-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cancel-button,
+.next-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: #ccc;
+    color: #000;
+}
+
+.next-button {
+    background-color: #c00;
+    color: #fff;
+}
+
+.next-button:hover {
+    background-color: #a00;
+}

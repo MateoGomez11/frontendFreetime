@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freetime - Tarea</title>
+    <!-- Aquí va el enlace al archivo CSS (puede omitirse en Angular si ya está importado) -->
+    <link rel="stylesheet" href="newTask1.component.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="/src/assets/prueba.png" alt="Logo" class="logo">
+            <div class="title-section">
+                <h1 class="app-title">Freetime</h1>
+                <p class="app-subtitle">Administra tu tiempo</p>
+            </div>
+            <div class="user-section">
+                <img src="/src/assets/user-icon.png" alt="Usuario" class="user-icon">
+                <p class="username">Nombre de usuario</p>
+            </div>
+        </header>
+
+        <div class="task-form">
+            <label for="task">Tarea:</label>
+            <input type="text" id="task" placeholder="Ingresa la tarea" class="input-field" required>
+
+            <label for="description">Descripción:</label>
+            <textarea id="description"
+                placeholder="Por favor, proporcione una descripción detallada de los requisitos necesarios para llevar a cabo la tarea de manera efectiva"
+                class="textarea-field" required></textarea>
+
+            <div class="button-group">
+                <button class="cancel-button">Cancelar</button>
+                <button class="next-button">Siguiente</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

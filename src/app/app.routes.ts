@@ -5,6 +5,7 @@ import { RegisterComponent } from './seguridad/register/register.component';
 import { FormfreetimerComponent } from './seguridad/form-freetimer/form-freetimer.component';
 import { FormTerminosComponent } from './seguridad/form-terminos/form-terminos.component';
 import { FormBothComponent } from './seguridad/form-both/form-both.component';
+import {newTask1} from  './task/'
 
 export const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
