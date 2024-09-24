@@ -4,29 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Freetime - Administra tu tiempo</title>
+    <link rel="stylesheet" href="newTask3.component.css">
 </head>
 
 <body>
-    <div class="login-container">
-        <div class="login-header">
-            <div class="logo">
-                <img src="/src/assets/prueba.png" alt="hola" />
+    <div class="container">
+        <!-- Header with logo and title -->
+        <header class="header">
+            <div class="logo-title">
+                <img src="path_to_logo.png" alt="Logo" class="logo">
+                <div class="title-section">
+                    <h1 class="app-title">Freetime</h1>
+                    <p class="app-subtitle">Administra tu tiempo</p>
+                </div>
             </div>
-            <h2 class="title">Freetime</h2>
-            <p class="subtitle">Administra tu tiempo</p>
-        </div>
+        </header>
 
-        <form class="login-form">
-            <input type="email" placeholder="Correo electrónico" class="input-field" required />
-            <input type="password" placeholder="Contraseña" class="input-field" required />
-            <button type="submit" class="login-button">Iniciar Sesión</button>
-            <div class="form-links">
-                <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
-                <span>&#124;</span>
-                <a href="/register" class="create-account">Crea una cuenta</a>
+        <!-- Balance section within a red bordered box -->
+        <div class="balance-section">
+            <div class="balance-item">
+                <span>Saldo Comprometido</span>
+                <span>$ 35K COP</span>
             </div>
-        </form>
+            <div class="balance-item">
+                <span>Saldo Disponible</span>
+                <span>$ 65K COP</span>
+            </div>
+            <div class="balance-item">
+                <span>Total</span>
+                <span>$ 100K COP</span>
+            </div>
+
+            <!-- Accept button inside the box -->
+            <button class="accept-button">Aceptar</button>
+        </div>
     </div>
 </body>
 
