@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    /* Asegura que no se extienda mucho en pantallas más anchas */
+    padding: 20px;
+}
+
+/* Ajuste del header para centrar el logo, título y usuario en formato vertical */
+.header {
+    display: flex;
+    flex-direction: column;
+    /* Todo en formato vertical */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #fff;
+}
+
+/* Agrupamos el logo y el título */
+.logo-title {
+    display: flex;
+    flex-direction: column;
+    /* Colocar logo y título uno debajo del otro */
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+    /* Espacio entre logo y título */
+}
+
+.title-section {
+    text-align: center;
+    /* Alinear el texto del título */
+}
+
+.app-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 0.2rem;
+}
+
+.app-subtitle {
+    font-size: 1rem;
+    color: #c00;
+    letter-spacing: 0.1rem;
+    margin-bottom: 15px;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.username {
+    font-size: 1.1rem;
+    color: #000;
+}
+
+/* Formulario ajustado */
+.task-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid #c00;
+    width: 100%;
+    /* Ocupa todo el ancho del contenedor */
+    margin-top: 20px;
+}
+
+/* Ajustes de los inputs */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 15px 0;
+    /* Espacio reducido debajo del campo de tarea */
+    border: 2px solid #c00;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #666;
+    outline: none;
+    background-color: #f9f9f9;
+    height: 40px;
+    /* Ajustamos la altura del campo de tarea */
+}
+
+/* Área de Descripción más grande */
+.textarea-field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #c00;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: #666;
+    outline: none;
+    background-color: #f9f9f9;
+    height: 120px;
+    /* Ajustamos para que se vea bien */
+    resize: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.cancel-button,
+.next-button {
+    width: 48%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: #ccc;
+    color: #000;
+}
+
+.next-button {
+    background-color: #c00;
+    color: #fff;
+    border: 2px solid #c00;
+}
+
+.cancel-button:hover {
+    background-color: #a00;
+}
+
+.next-button:hover {
+    background-color: #a00;
+}
