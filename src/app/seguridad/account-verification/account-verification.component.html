@@ -9,21 +9,28 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="login-container">
-        <div class="login-header">
-          <div class="logo">
-            <img src="'assets/Logo.png'" alt="logo" class="logo-posicion__container"/>
-          </div>
-          <p class="titulo-pagina__container">Verifica tu cuenta</p>
-          
-        </div>
-    </div>
-    <div class="login-container">
-      <div class="borde-contenido__container">
-        <button class="botones-caja__container">Verificar con correo</button>
-        <br>
-        <button class="botones-caja__container">Atrás</button>
+  <div class="verification-container">
+    <header class="header">
+      <div class="logo">
+        <img src="assets/Logo.png" alt="Logo">
+        <span>Administra Tu Tiempo</span>
       </div>
-    </div>
+      <div class="menu-icons">
+        <button class="menu-btn">&#9776;</button>
+        <button class="help-btn">?</button>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="title-box">
+        <h2>Verifica tu cuenta</h2>
+      </div>
+
+      <div class="verification-box">
+        <a href="account-confirmation" class="botones-caja__container">Verificar con correo</a>
+        <button class="botones-caja__container bigger-button" onclick="history.back()">Atrás</button>
+      </div>
+    </main>
+  </div>
 </body>
 </html>

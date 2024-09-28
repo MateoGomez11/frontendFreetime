@@ -1,45 +1,164 @@
-.login-container {
-    display: flex;
-    flex-direction: column;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.verification-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  /* Añade margen inferior */
+  margin-top: 20px;
+  font-size: large;
+}
+
+.logo {
+  display: flex;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .titulo-pagina__container{
-    border: 2px solid #c00;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.menu-icons {
+  display: flex;
+    gap: 10px;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.title-box{
+  display: grid;
+    place-items: center;
+  border: 2px solid #c00;
     border-radius: 15px;
-    color: black;
-    padding: 15px 265px;
-    font-size: 20px;
-  }
-  
-  .logo-posicion__container{
-    margin-right: 90px;
-    position: absolute;
-    display: flex;
-    top: 150px;
-  }
-    
-  .borde-contenido__container {
-    background-color: white;
-    position: relative;
-    margin-top: -950px;
-    border: 2px solid #c00;
-    padding: 15px 200px;
-    border-radius: 15px;
-  }
-    
-  .botones-caja__container {
-    display: block;
+    padding: 15px;
+    margin-bottom: 20px;
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: #c00;
-    color: white;
-    border: 2px solid #c00;
-    font-size: 30px;
-    border-radius: 15px;
+    max-width: 400px;
+}
+.verification-box {
+  border: 2px solid #c00;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.back-button {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+.botones-caja__container {
+  display: block;
+  width: auto;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: #c00;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+
+.bigger-button {
+  padding: 15px 20px;
+  /* Aumenta el padding */
+  font-size: 20px;
+  /* Aumenta el tamaño de la fuente */
+  border-radius: 12px;
+  /* Ajusta el radio de las esquinas (opcional) */
+}
+
+.botones-caja__container {
+  width: 200px;
+  padding: 15px 20px;
+  /* Aumenta el padding para hacerlo más grande en móviles */
+  font-size: 23px;
+  /* Aumenta el tamaño de la fuente en móviles */
+}
+
+.verify-btn,
+.resend-btn {
+  background-color: #c00;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  /* Aumenta el padding para hacerlo más grande */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  /* Aumenta el tamaño de la fuente */
+
+}
+
+@media (max-width: 600px) {
+
+.titulo-pagina__container {
+    font-size: 2.2rem;
+    /* Aumenta más el tamaño del texto en pantallas grandes */
+    padding: 30px;
+    /* Ajusta el padding para mayor espacio en pantallas grandes */
   }
-    
+
+  .titulo-pagina__container .arrow {
+    font-size: 2.5rem;
+    /* Aumenta el tamaño de la flecha aún más */
+  }
+
+  .titulo-pagina__container .text {
+    font-size: 2.2rem;
+    /* Aumenta más el tamaño del texto principal */
+  }
+
+  .verification-container {
+    font-size: 1.8rem;
+    /* Ajusta el tamaño de la fuente en todo el formulario */
+    padding: 40px;
+    /* Aumenta el padding del formulario */
+  }
+
+  .verify-button,
+  .resend-button {
+    font-size: 1.8rem;
+    /* Aumenta más el tamaño de los botones */
+    padding: 25px 50px;
+    /* Haz los botones más grandes */
+  }
+
+  .timer-text {
+    font-size: 1.6rem;
+    /* Aumenta más el tamaño del temporizador */
+  }
+}
