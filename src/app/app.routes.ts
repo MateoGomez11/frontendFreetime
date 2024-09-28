@@ -6,6 +6,7 @@ import { FormfreetimerComponent } from './seguridad/form-freetimer/form-freetime
 import { FormTerminosComponent } from './seguridad/form-terminos/form-terminos.component';
 import { FormBothComponent } from './seguridad/form-both/form-both.component';
 import { AccountVerificationComponent } from './seguridad/account-verification/account-verification.component';
+import { AccountConfimationComponent } from './seguridad/account-confimation/account-confimation.component';
 import { newTaskComponent } from './task/newTask1/newTask.component';
 import { newTaskComponent2 } from './task/newTask2/newTask2.component';
 import { newTaskComponent3 } from './task/newTask3/newTask3.component';
@@ -20,6 +21,7 @@ export const routes: Routes = [
   { path: 'form-terminos', component: FormTerminosComponent },
   { path: 'form-both', component: FormBothComponent },
   { path: 'account-verification', component: AccountVerificationComponent},
+  { path: 'account-confirmation', component: AccountConfimationComponent},
   { path: 'newTask', component: newTaskComponent },
   { path: 'newTask2', component: newTaskComponent2 },
   { path: 'newTask3', component: newTaskComponent3 },
