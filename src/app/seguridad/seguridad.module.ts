@@ -6,6 +6,8 @@ import { RegisterComponent } from './register/register.component';
 import { FormfreetimerComponent } from './form-freetimer/form-freetimer.component';
 import { FormTerminosComponent } from './form-terminos/form-terminos.component';
 import { FormBothComponent } from './form-both/form-both.component';
+import { AccountVerificationComponent } from './account-verification/account-verification.component';
+import { AccountConfimationComponent } from './account-confimation/account-confimation.component';
 
 import { FormsModule } from '@angular/forms';
 
@@ -25,6 +27,12 @@ const routes: Routes = [
   },{
     path: 'form-both',
     component: FormBothComponent
+  },{
+    path: 'account-verification',
+    component: AccountVerificationComponent
+  },{
+    path: 'account-confirmation',
+    component: AccountConfimationComponent
   }
 ];
 
