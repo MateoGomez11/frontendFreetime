@@ -7,6 +7,7 @@ import { FormTerminosComponent } from './seguridad/form-terminos/form-terminos.c
 import { FormBothComponent } from './seguridad/form-both/form-both.component';
 import { SupportComponent } from './support/supportRequest/support.component';
 import { requestComponent } from './support/requestCreate/request.component';
+import { MenuFreetimerComponent } from './menu/freetimer-menu/menu-freetimer.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -17,4 +18,5 @@ export const routes: Routes = [
   { path: 'form-both', component:FormBothComponent},
   { path: 'supportrequest', component: SupportComponent},
   { path: 'requestcreate', component: requestComponent},
+  { path: 'menu-freetimer', component: MenuFreetimerComponent}
 ];
