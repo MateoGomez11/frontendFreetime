@@ -1,48 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - Freetime</title>
+  <link rel="stylesheet" href="">
+  <!-- Puedes añadir links a Bootstrap o cualquier otra librería CSS aquí si es necesario -->
 </head>
 <body>
-    <div class="register-container">
-        <div class="register-header">
-          <div class="logo">
-            <img src="/src/assets/prueba.png" alt="hola"/>
-          </div>
-          <h2 class="title">Freetime</h2>
-          <p class="subtitle">Administra tu tiempo</p>
-        </div>
+  <div class="registro-container">
+    <div class="logo-container">
+      <img src="images/logo1.png" alt="Logo Freetime" class="logo-img">
+      <h1 class="app-title">Freetime</h1>
+      <h2 class="subtitle">Administra tu tiempo</h2>
+    </div>
+
+    <form class="registro-form">
+      <input type="password" placeholder="Contraseña" required>
+      <input type="text" placeholder="Nombre de usuario" required>
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="text" placeholder="Cédula" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <input type="tel" placeholder="Celular" required>
+      <input type="text" placeholder="País" required>
+      <input type="text" placeholder="Ciudad" required>
+      <input type="text" placeholder="Dirección" required>
+      <label for="foto">Foto</label>
+      <input type="file" id="foto" name="foto" class="upload-btn">
       
-        <form class="register-form" #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
-          <input type="password" placeholder="Contraseña" class="input-field"  />
-          <input type="text" placeholder="Nombre Completo" class="input-field"  />
-          <input type="text" placeholder="Cédula" class="input-field"  />
-          <input type="email" placeholder="Correo electrónico" class="input-field"  />
-          <input type="text" placeholder="Ciudad" class="input-field"  />
-          <input type="text" placeholder="País" class="input-field"  />
-          <input type="tel" placeholder="Celular" class="input-field"  />
-          <input type="text" placeholder="Dirección" class="input-field"  />
-          <div class="radio-group-container">
-            <p>Selecciona una opción:</p>
-            <div class="radio-group">
-                <label>
-                    <input type="radio" name="quiz" value="1" required [(ngModel)]="selectedOption" />Full Timer
-                </label>
-                <label>
-                    <input type="radio" name="quiz" value="2" [(ngModel)]="selectedOption" />Freetimer
-                </label>
-                <label>
-                    <input type="radio" name="quiz" value="3" [(ngModel)]="selectedOption" />Ambos
-                </label>
-                
-            </div>
-        </div>
-          <button type="submit" class="register-button">Registrarte</button>
-          <div class="form-links">
-          </div>
-        </form>
+      <div class="radio-group">
+        <label>¿Deseas ingresar como:</label>
+        <label><input type="radio" name="tipo-usuario" value="Freetime" required> Freetime</label>
+        <label><input type="radio" name="tipo-usuario" value="Fulltimer" required> Fulltimer</label>
       </div>
+
+      <button type="submit" class="register-btn">Registrarte</button>
+    </form>
+  </div>
 </body>
 </html>
