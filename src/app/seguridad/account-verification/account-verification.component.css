@@ -1,164 +1,64 @@
-body,
-html {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  height: 100%;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #fff;
-  padding: 20px;
-}
-
-.verification-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.header {
-display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  /* Añade margen inferior */
-  margin-top: 20px;
-  font-size: large;
-}
-
-.logo {
-  display: flex;
-    align-items: center;
-}
-
-.logo img {
-  height: 40px;
-  margin-right: 10px;
-}
-
-.menu-icons {
-  display: flex;
-    gap: 10px;
-}
-
-.main-content {
-  flex-grow: 1;
+.login-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
 }
 
-.title-box{
-  display: grid;
-    place-items: center;
-  border: 2px solid #c00;
-    border-radius: 15px;
-    padding: 15px;
-    margin-bottom: 20px;
-    width: 100%;
-    max-width: 400px;
+.login-header {
+  display: flex;
+  flex-direction: column; 
 }
-.verification-box {
-  border: 2px solid #c00;
+
+.logo-wrapper__container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: -15px;
+}
+
+.logo img {
+  width: 180px;
+  height: 80px;
+}
+
+.logo2 img {
+  width: 30px;
+  height: auto;
+}
+
+.login-form__container {
+  background-color: #fff;
+  padding: 1.5rem;
   border-radius: 15px;
-  padding: 15px;
-  margin-bottom: 20px;
+  border: 2px solid #c00;
+}
+
+.login-button {
   width: 100%;
-  max-width: 400px;
-}
-
-.back-button {
-  text-decoration: none;
-  color: #333;
-  font-size: 18px;
-}
-
-.botones-caja__container {
-  display: block;
-  width: auto;
-  padding: 10px;
-  margin: 10px auto;
+  padding: 1rem;
+  margin-top: 1rem;
   background-color: #c00;
   color: white;
   border: none;
-  font-size: 18px;
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-
-.bigger-button {
-  padding: 15px 20px;
-  /* Aumenta el padding */
-  font-size: 20px;
-  /* Aumenta el tamaño de la fuente */
-  border-radius: 12px;
-  /* Ajusta el radio de las esquinas (opcional) */
-}
-
-.botones-caja__container {
-  width: 200px;
-  padding: 15px 20px;
-  /* Aumenta el padding para hacerlo más grande en móviles */
-  font-size: 23px;
-  /* Aumenta el tamaño de la fuente en móviles */
-}
-
-.verify-btn,
-.resend-btn {
-  background-color: #c00;
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  /* Aumenta el padding para hacerlo más grande */
   border-radius: 5px;
+  font-size: 1rem;
   cursor: pointer;
-  font-size: 18px;
-  /* Aumenta el tamaño de la fuente */
-
+  margin: 0.5rem auto;
 }
 
-@media (max-width: 600px) {
+.login-button:hover {
+  background-color: #a00;
+}
 
-.titulo-pagina__container {
-    font-size: 2.2rem;
-    /* Aumenta más el tamaño del texto en pantallas grandes */
-    padding: 30px;
-    /* Ajusta el padding para mayor espacio en pantallas grandes */
-  }
-
-  .titulo-pagina__container .arrow {
-    font-size: 2.5rem;
-    /* Aumenta el tamaño de la flecha aún más */
-  }
-
-  .titulo-pagina__container .text {
-    font-size: 2.2rem;
-    /* Aumenta más el tamaño del texto principal */
-  }
-
-  .verification-container {
-    font-size: 1.8rem;
-    /* Ajusta el tamaño de la fuente en todo el formulario */
-    padding: 40px;
-    /* Aumenta el padding del formulario */
-  }
-
-  .verify-button,
-  .resend-button {
-    font-size: 1.8rem;
-    /* Aumenta más el tamaño de los botones */
-    padding: 25px 50px;
-    /* Haz los botones más grandes */
-  }
-
-  .timer-text {
-    font-size: 1.6rem;
-    /* Aumenta más el tamaño del temporizador */
-  }
+.titulo-caja__container {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #c00;
+  width: 205px;
+  text-align: center;
 }
