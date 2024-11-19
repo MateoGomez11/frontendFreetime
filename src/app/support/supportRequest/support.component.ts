@@ -1,19 +1,32 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { SupportService } from './support.service';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-support',
   standalone: true,
-  imports: [],
   templateUrl: './support.component.html',
-  styleUrl: './support.component.css',
+  styleUrls: ['./support.component.css'],
+  imports: [FormsModule, CommonModule]
 })
 export class SupportComponent {
-  constructor(private router: Router) {}
+  supportDescription: string = '';
+  userId: number = 1;  // Aquí deberías obtener el id del usuario dinámicamente
+  supportStateId: number = 1;  // El estado del soporte, podrías obtenerlo dinámicamente también
+  message: string = '';
 
-  onSubmit() {
-    this.router.navigate(['/requestcreate']);
+  constructor(private supportService: SupportService) {}
+
+  createSupport() {
+    this.supportService.createSupport(this.supportDescription, this.userId, this.supportStateId)
+      .subscribe(
+        response => {
+            this.message = 'Soporte creado exitosamente.';  
+        },
+        error => {
+          this.message = `Error al crear soporte: ${error.message}`;
+        }
+      );
   }
 }
-
-
