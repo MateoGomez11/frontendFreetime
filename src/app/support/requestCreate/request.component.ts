@@ -1,12 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-request',
-  standalone: true,
-  imports: [],
   templateUrl: './request.component.html',
-  styleUrl: './request.component.css'
+  styleUrls: ['./request.component.css']
 })
-export class requestComponent {
+export class requestComponent implements OnInit {
+  caseNumber: string = '';
+  userEmail: string = '';
 
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit() {
+    this.route.queryParams.subscribe(params => {
+      this.caseNumber = params['support_id'];
+      this.userEmail = params['user_email'];  // Obtiene el correo del usuario
+    });
+  }
 }

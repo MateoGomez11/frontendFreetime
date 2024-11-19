@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class SupportService {
 
-  private apiUrl = 'http://127.0.0.1:1338/addSupport';  // Asegúrate de que la URL sea la correcta
+  private apiUrl = 'http://127.0.0.1:1337/addSupport';  // Asegúrate de que la URL sea la correcta
 
   constructor(private http: HttpClient) {}
 
